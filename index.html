@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Import z Levitia do BIS – návod | Titio</title>
+    <meta
+      name="description"
+      content="Návod, jak v Chrome nebo Brave nainstalovat doplněk Import z Levitia do BIS a přidat účastníky z exportu Levitia."
+    />
+    <link rel="canonical" href="https://oddiltitio.cz/aplikace/bis" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <a class="logo-link" href="https://oddiltitio.cz/">
+          <img src="images/logo-titio.png" alt="Titio" width="250" height="98" />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="band">
+        <div class="wrap">
+          <h1>Import z Levitia do BIS</h1>
+          <p class="lead">
+            Doplněk vezme excel z Levitia a na stránce uzavření akce přidá lidi do BIS.
+            Funguje v Google Chrome i v Brave.
+          </p>
+          <p>
+            <a class="btn-zluty" href="import-z-levitia-do-bis.zip" download>Stáhnout doplněk</a>
+          </p>
+          <ol class="flow">
+            <li>
+              <a href="#export"><b>1</b><span>Export z Levitia</span></a>
+            </li>
+            <li>
+              <a href="#stazeni"><b>2</b><span>Stažení a rozbalení</span></a>
+            </li>
+            <li>
+              <a href="#instalace"><b>3</b><span>Chrome nebo Brave</span></a>
+            </li>
+            <li>
+              <a href="#import"><b>4</b><span>Spuštění importu</span></a>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="export">
+        <div class="wrap step">
+          <div class="copy">
+            <div class="kicker"><span class="num">1</span> Export</div>
+            <h2>Z Levitia stáhni Excel</h2>
+            <p>V Levitu otevři svou proběhlou výpravu, stránku <strong>Účastníci</strong> a potom <strong>Chytrá tabulka</strong>.</p>
+            <p>Nech v ní jen sloupce <strong>Jméno</strong>, <strong>Příjmení</strong> a <strong>Datum narození</strong>, v tomto pořadí. V Titiu na to už máme uložené zobrazení, stačí ho načíst.</p>
+            <p>Pak klikni na <strong>Exportovat do Excelu</strong>, stahovací ikonu nad tabulkou.</p>
+          </div>
+          <div class="figure" aria-hidden="true">
+            <div class="sheet">
+              <div class="sheet-row head">
+                <div class="cell">Jméno</div>
+                <div class="cell">Příjmení</div>
+                <div class="cell">Datum narození</div>
+              </div>
+              <div class="sheet-row">
+                <div class="cell">Ema</div>
+                <div class="cell">Lesní</div>
+                <div class="cell">14.03.2016</div>
+              </div>
+              <div class="sheet-row">
+                <div class="cell">Tonda</div>
+                <div class="cell">Háj</div>
+                <div class="cell">02.07.2014</div>
+              </div>
+            </div>
+            <div class="steps-mini">
+              <div><span class="num">1</span> Výprava → Účastníci → Chytrá tabulka</div>
+              <div><span class="num">2</span> Sloupce Jméno, Příjmení, Datum narození</div>
+              <div><span class="num">3</span> Exportovat do Excelu</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="stazeni">
+        <div class="wrap step reverse">
+          <div class="copy">
+            <div class="kicker"><span class="num">2</span> Stažení</div>
+            <h2>Stáhni zip a rozbal ho</h2>
+            <p>Stáhni doplněk a rozbal zip. Vznikne složka <strong>plugin</strong>. V dalším kroku vybereš právě tuhle složku, ne samotný zip.</p>
+            <p>
+              <a class="btn-zluty" href="import-z-levitia-do-bis.zip" download>Stáhnout doplněk</a>
+            </p>
+          </div>
+          <div class="figure" aria-hidden="true">
+            <div class="unpack">
+              <div class="pack">import-z-levitia-do-bis.zip</div>
+              <div class="unpack-arrow">↓ rozbalit</div>
+              <div class="folder">
+                <strong>plugin</strong>
+                <small>složka, kterou pak vybereš</small>
+              </div>
+            </div>
+            <div class="steps-mini">
+              <div><span class="num">1</span> Stáhni zip</div>
+              <div><span class="num">2</span> Rozbal ho</div>
+              <div><span class="num">3</span> Vznikne složka plugin</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="instalace">
+        <div class="wrap step">
+          <div class="copy">
+            <div class="kicker"><span class="num">3</span> Instalace</div>
+            <h2>Nahraj doplněk do Chrome nebo Brave</h2>
+            <p>Otevři stránku rozšíření. Zapni režim pro vývojáře a načti rozbalenou složku <strong>plugin</strong>, ne soubor zip.</p>
+            <div class="store-links">
+              <button type="button" class="browser-link" data-url="chrome://extensions" data-label="Otevřít v Chrome">
+                <img class="brand" src="images/chrome.svg" alt="" />
+                <span class="browser-label">Otevřít v Chrome</span>
+              </button>
+              <button type="button" class="browser-link" data-url="brave://extensions" data-label="Otevřít v Brave">
+                <img class="brand" src="images/brave.svg" alt="" />
+                <span class="browser-label">Otevřít v Brave</span>
+              </button>
+              <p class="copy-note">Kliknutí zkopíruje adresu. Vlož ji do adresního řádku a stiskni Enter.</p>
+            </div>
+            <ul>
+              <li>Vpravo nahoře zapni <strong>Režim pro vývojáře</strong>.</li>
+              <li>Zvol <strong>Načíst rozbalené</strong> a vyber složku <strong>plugin</strong>, ne soubor zip.</li>
+            </ul>
+          </div>
+          <div class="figure">
+            <div class="browser">
+              <div class="chrome">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <div class="url-swap">
+                  <span class="url-chrome">
+                    <img class="brand" src="images/chrome.svg" alt="" />
+                    chrome://extensions
+                  </span>
+                  <span class="url-brave">
+                    <img class="brand" src="images/brave.svg" alt="" />
+                    brave://extensions
+                  </span>
+                </div>
+              </div>
+              <div class="browser-body">
+                <div class="dev-bar">
+                  <span>Rozšíření</span>
+                  <span class="dev-switch">Režim pro vývojáře <span class="toggle" aria-hidden="true"></span></span>
+                </div>
+                <div class="ext-row">
+                  <img class="ext-logo" src="images/levitio-logo.png" alt="" />
+                  <div>
+                    <strong>Import z Levitia do BIS</strong>
+                    <small>verze 2.1 · složka plugin</small>
+                  </div>
+                </div>
+                <div class="steps-mini">
+                  <div><span class="num">1</span> Režim pro vývojáře vpravo nahoře</div>
+                  <div><span class="num">2</span> Načíst rozbalené → složka plugin, ne zip</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="import">
+        <div class="wrap step reverse">
+          <div class="copy">
+            <div class="kicker"><span class="num">4</span> Import</div>
+            <h2>V BISu nahraj soubor</h2>
+            <p>V BIS otevři svou výpravu a přejdi na <strong>Účastníci</strong> a <strong>Evidence akce</strong>.</p>
+            <p>V zelené kartě, kterou doplněk přidá, zvol <strong>Nahrát soubor</strong> a vyber stažený excel z Levitia. Pak klikni na <strong>Spustit import</strong>.</p>
+          </div>
+          <div class="figure">
+            <div class="plugin">
+              <div class="plugin-head">
+                <img src="images/levitio-logo.png" alt="" />
+                <div>
+                  <h3>Import z Levitia</h3>
+                  <p>Soubor se sloupci Jméno, Příjmení a Datum narození.</p>
+                </div>
+              </div>
+              <div class="plugin-actions">
+                <span class="btn pick">Nahrát soubor</span>
+                <span class="file-name">export.xlsx</span>
+                <span class="btn go run">Spustit import</span>
+              </div>
+            </div>
+            <div class="steps-mini">
+              <div><span class="num">1</span> Výprava v BIS</div>
+              <div><span class="num">2</span> Účastníci a Evidence akce</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="rucne">
+        <div class="wrap step">
+          <div class="copy">
+            <div class="kicker"><span class="num">5</span> Ruční doplnění</div>
+            <h2>Koho BIS nenašel, doplň ručně</h2>
+            <p>Když někoho BIS nepřidá, zelená karta zčervená. Zadej ho v BIS ručně a v seznamu ho odškrtni. Až jsou odškrtnutí všichni, seznam zmizí.</p>
+          </div>
+          <div class="figure">
+            <div class="todo">
+              <h3>Někteří se nepřidali</h3>
+              <p>Přidej je v BIS ručně a odškrtni.</p>
+              <div class="check">
+                <span class="box"></span>
+                <div><b>Ema Lesní</b><small>14. března 2016</small></div>
+              </div>
+              <div class="check">
+                <span class="box on"></span>
+                <div><b>Tonda Háj</b><small>2. července 2014</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="duplicity">
+        <div class="wrap step reverse">
+          <div class="copy">
+            <div class="kicker"><span class="num">6</span> Duplicity</div>
+            <h2>Organizátora přidaného znovu smaž</h2>
+            <p>Když už je člověk na akci jako organizátor a import ho přidá ještě jednou, tento řádek se červeně zvýrazní. Řádek s odznakem ORG nech být.</p>
+          </div>
+          <div class="figure">
+            <table class="people">
+              <thead>
+                <tr>
+                  <th>Jméno a příjmení</th>
+                  <th>Narození</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tonda Háj</td>
+                  <td>2. 7. 2014</td>
+                  <td><span class="org">ORG</span></td>
+                </tr>
+                <tr class="dup">
+                  <td>Tonda Háj</td>
+                  <td>2. 7. 2014</td>
+                  <td><button class="trash" type="button" aria-label="Smazat">⌫</button></td>
+                </tr>
+                <tr>
+                  <td>Ema Lesní</td>
+                  <td>14. 3. 2016</td>
+                  <td><button class="trash" type="button" tabindex="-1" aria-hidden="true">⌫</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="graf">
+        <div class="wrap step">
+          <div class="copy">
+            <div class="kicker"><span class="num">7</span> Statistiky</div>
+            <h2>Statistiky pod tabulkou</h2>
+            <p>Statistiky účastníků se ukazují hezky vizuálně pod tabulkou.</p>
+          </div>
+          <div class="figure">
+            <div class="stats">
+              <div class="donut" role="img" aria-label="12 účastníků, z toho 3 organizátoři a 9 účastníků"><span>12</span></div>
+              <div>
+                <strong>Účastníci</strong>
+                <div class="legend">
+                  <span><i style="background:#f5b942"></i>Organizátoři 3</span>
+                  <span><i style="background:#008800"></i>Účastníci 9</span>
+                </div>
+                <div class="bar"><span>7–15</span><span class="track"><span style="--w:100%"></span></span><span>8</span></div>
+                <div class="bar"><span>16–18</span><span class="track"><span style="--w:25%;background:#0b6b3a"></span></span><span>2</span></div>
+                <div class="bar"><span>19–26</span><span class="track"><span style="--w:18%;background:#3f7089"></span></span><span>1</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        Přírodní dětský oddíl
+        <a href="https://oddiltitio.cz/">Titio</a>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var note = document.querySelector(".copy-note");
+
+        function legacyCopy(text) {
+          return new Promise(function (resolve, reject) {
+            var area = document.createElement("textarea");
+            area.value = text;
+            area.setAttribute("readonly", "");
+            area.style.position = "fixed";
+            area.style.left = "-9999px";
+            document.body.appendChild(area);
+            area.select();
+            var ok = document.execCommand("copy");
+            document.body.removeChild(area);
+            if (ok) resolve();
+            else reject(new Error("copy"));
+          });
+        }
+
+        function copyText(text) {
+          if (navigator.clipboard && window.isSecureContext) {
+            return navigator.clipboard.writeText(text).catch(function () {
+              return legacyCopy(text);
+            });
+          }
+          return legacyCopy(text);
+        }
+
+        function showCopied(btn, url) {
+          document.querySelectorAll(".browser-link").forEach(function (other) {
+            other.classList.remove("is-copied");
+            var otherLabel = other.querySelector(".browser-label");
+            if (otherLabel) otherLabel.textContent = other.getAttribute("data-label");
+          });
+          btn.classList.add("is-copied");
+          var label = btn.querySelector(".browser-label");
+          if (label) label.textContent = "Zkopírováno";
+          if (note) note.textContent = url + " je ve schránce. Vlož ji do adresního řádku a stiskni Enter.";
+        }
+
+        document.querySelectorAll(".browser-link").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var url = btn.getAttribute("data-url");
+            copyText(url).then(function () {
+              showCopied(btn, url);
+            }).catch(function () {
+              if (!note) return;
+              note.textContent = "";
+              note.appendChild(document.createTextNode("Adresa je označená. Zkopíruj ji a vlož do adresního řádku: "));
+              var code = document.createElement("span");
+              code.className = "copy-url";
+              code.textContent = url;
+              note.appendChild(code);
+              var range = document.createRange();
+              range.selectNodeContents(code);
+              var sel = window.getSelection();
+              sel.removeAllRanges();
+              sel.addRange(range);
+            });
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
